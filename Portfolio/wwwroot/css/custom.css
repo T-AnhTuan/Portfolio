@@ -1,0 +1,225 @@
+﻿/* ================= ANIMATION CHUYỂN ĐỘNG TRƯỢT LÊN ================= */
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+    .reveal.active {
+        opacity: 1;
+        transform: translateY(0);
+    }
+/* Nút Cuộn Lên Đầu */
+#backToTop {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    color: white;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: 0.3s;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+    #backToTop.show {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    #backToTop:hover {
+        background: var(--accent-purple);
+        border-color: var(--accent-purple);
+    }
+/* Container chính cho nút gọi */
+.phone-ring-btn {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    z-index: 999;
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+    .phone-ring-btn:hover .phone-ring-img-circle {
+        animation: none;
+        background-color: #218838;
+    }
+/* Vòng tròn lan tỏa số 1 */
+.phone-ring-circle {
+    width: 100px;
+    height: 100px;
+    top: -20px;
+    left: -20px;
+    position: absolute;
+    background-color: transparent;
+    border: 2px solid #28a745;
+    border-radius: 100%;
+    opacity: .5;
+    animation: phone-circle-anim 1.2s infinite ease-in-out;
+    transition: all .5s;
+}
+/* Vòng tròn lan tỏa số 2 (đậm hơn) */
+.phone-ring-circle-fill {
+    width: 70px;
+    height: 70px;
+    top: -5px;
+    left: -5px;
+    position: absolute;
+    background-color: rgba(40, 167, 69, 0.2);
+    border-radius: 100%;
+    animation: phone-circle-fill-anim 2.3s infinite ease-in-out;
+}
+/* Vòng tròn chứa Icon điện thoại */
+.phone-ring-img-circle {
+    width: 60px;
+    height: 60px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: #28a745;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: phone-img-anim 1s infinite ease-in-out;
+}
+
+    .phone-ring-img-circle i {
+        color: white;
+        font-size: 25px;
+    }
+/* Container chính cho nút Messenger */
+.messenger-ring-btn {
+    position: fixed;
+    left: 20px;
+    bottom: 100px;
+    z-index: 999;
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    cursor: pointer;
+}
+/* Hiệu ứng lan tỏa (Màu xanh Messenger) */
+.messenger-ring-circle {
+    width: 100px;
+    height: 100px;
+    top: -20px;
+    left: -20px;
+    position: absolute;
+    background-color: transparent;
+    border: 2px solid #0084ff;
+    border-radius: 100%;
+    opacity: .5;
+    animation: phone-circle-anim 1.2s infinite ease-in-out;
+}
+
+.messenger-ring-circle-fill {
+    width: 70px;
+    height: 70px;
+    top: -5px;
+    left: -5px;
+    position: absolute;
+    background-color: rgba(0, 132, 255, 0.2);
+    border-radius: 100%;
+    animation: phone-circle-fill-anim 2.3s infinite ease-in-out;
+}
+/* Vòng tròn chứa Icon Messenger */
+.messenger-ring-img-circle {
+    width: 60px;
+    height: 60px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: #0084ff;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: phone-img-anim 1s infinite ease-in-out;
+}
+
+    .messenger-ring-img-circle i {
+        color: white;
+        font-size: 30px;
+    }
+/* Hiệu ứng 1: Lan tỏa vòng tròn ngoài */
+@keyframes phone-circle-anim {
+    0% {
+        transform: rotate(0) scale(0.5) skew(1deg);
+        opacity: 0.1;
+    }
+
+    30% {
+        transform: rotate(0) scale(0.7) skew(1deg);
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: rotate(0) scale(1) skew(1deg);
+        opacity: 0.1;
+    }
+}
+/* Hiệu ứng 2: Lan tỏa vòng tròn trong */
+@keyframes phone-circle-fill-anim {
+    0% {
+        transform: rotate(0) scale(0.7) skew(1deg);
+        opacity: 0.2;
+    }
+
+    50% {
+        transform: rotate(0) scale(1) skew(1deg);
+        opacity: 0.2;
+    }
+
+    100% {
+        transform: rotate(0) scale(0.7) skew(1deg);
+        opacity: 0.2;
+    }
+}
+/* Hiệu ứng 3: Lắc lư cái icon điện thoại */
+@keyframes phone-img-anim {
+    0% {
+        transform: rotate(0) scale(1) skew(1deg);
+    }
+
+    10% {
+        transform: rotate(-25deg) scale(1) skew(1deg);
+    }
+
+    20% {
+        transform: rotate(25deg) scale(1) skew(1deg);
+    }
+
+    30% {
+        transform: rotate(-25deg) scale(1) skew(1deg);
+    }
+
+    40% {
+        transform: rotate(25deg) scale(1) skew(1deg);
+    }
+
+    50% {
+        transform: rotate(0) scale(1) skew(1deg);
+    }
+
+    100% {
+        transform: rotate(0) scale(1) skew(1deg);
+    }
+}

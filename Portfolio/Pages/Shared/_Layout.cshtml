@@ -1,51 +1,154 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Portfolio</title>
-    <script type="importmap"></script>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/Portfolio.styles.css" asp-append-version="true" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>@ViewData["Title"] - Trần Anh Tuấn | Học viện Tài chính | MIS Specialist & Project Management</title>
+    <meta name="title" content="Trần Anh Tuấn | Học viện Tài chính | MIS Specialist & Project Management" />
+    <meta name="description" content="Là sinh viên năm cuối chuyên ngành Hệ thống thông tin Quản lý (MIS) tại Học viện Tài chính, mình kết hợp nền tảng tư duy logic vững chắc với niềm đam mê trong việc tổ chức và điều phối dự án công nghệ." />
+    <meta name="keywords" content="anhtuan, trantuan, Trần Anh Tuấn, Trần Anh Tuấn HVTC, Trần Anh Tuấn MIS, Anh Tuấn AOF, Anh Tuấn HVTC, phân tích nghiệp vụ, cv, tuyển dụng, tìm việc, business analyst" />
+    <meta name="author" content="Trần Anh Tuấn" />
+    <link rel="canonical" href="https://trantuan.io.vn" />
+
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="Trần Anh Tuấn | MIS & Technology Portfolio" />
+    <meta property="og:description" content="Chuyên viên Hệ thống thông tin tương lai từ Học viện Tài chính. Xem các dự án C# và SQL Server của tôi." />
+    <meta property="og:url" content="https://trantuan.io.vn" />
+    <meta property="og:image" content="https://trantuan.io.vn/image/Tran-Anh-Tuan.jpg" />
+
+    <link rel="icon" type="image/png" href="~/image/logo/Logo-tron.ico">
+
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="stylesheet" href="/css/custom.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/site.css">
+    <link rel="stylesheet" href="/css/media.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    @Html.Raw("<script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"Person\",\"name\":\"Trần Anh Tuấn\",\"additionalName\":\"Tuan\",\"jobTitle\":\"IT Business Analyst\",\"url\":\"https://trantuan.io.vn\",\"image\":\"https://trantuan.io.vn/images/tran-anh-tuan.webp\",\"email\":\"mailto:contact@trantuan.io.vn\",\"telephone\":\"+84-789-060-891\",\"gender\":\"Male\",\"nationality\":\"Vietnamese\",\"address\":{\"@type\":\"PostalAddress\",\"addressLocality\":\"Bắc Từ Liêm\",\"addressRegion\":\"Hà Nội\",\"addressCountry\":\"VN\"},\"alumniOf\":{\"@type\":\"CollegeOrUniversity\",\"name\":\"Học viện Tài chính (AOF)\",\"sameAs\":\"https://hvtc.edu.vn/\"},\"knowsAbout\":[\"Business Analysis\",\"Tài chính Kế toán\",\"Data Mining\",\"C# Winforms\",\"ASP.NET MVC\",\"SQL Server\",\"PowerBI\",\"UML / BPMN 2.0\"],\"sameAs\":[\"https://www.linkedin.com/in/anh-tuan-hvtc/\",\"https://github.com/T-AnhTuan/\",\"https://www.facebook.com/trantuan.io.vn/\",\"https://tiktok.com/@tuan.ptvn/\",\"https://instagram.com/trantuan.io.vn/\",\"https://sukien.hvtc.edu.vn/tran-anh-tuan-sv1594221\"]}</script>")
+
+    @await RenderSectionAsync("Head", required: false)
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index">Portfolio</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
+
+    <header class="header" id="header">
+        <div class="container nav-wrapper">
+            <a href="/" class="logo">
+                <img src="/image/logo/logo-ngang-nen-toi.png" alt="TAT TechDigital" />
+            </a>
+            <nav class="nav-links">
+                <a href="#home">Trang chủ</a>
+                <a href="#about">Về tôi</a>
+                <a href="#services">Kỹ năng</a>
+                <a href="#projects">Dự án</a>
+                <a href="https://trantuan.io.vn/cv/">Hồ sơ CV</a>
+                <a href="https://trantuan.io.vn/profile/">Portfolio</a>
+                <a href="mailto:contact@trantuan.io.vn" class="btn-gradient"><i class="fa-solid fa-paper-plane"></i> Gửi Mail</a>
+            </nav>
+        </div>
+    </header>
+
+    <main role="main">
+        @RenderBody()
+    </main>
+
+    <div id="footer-placeholder">
+        <footer class="footer" id="contact">
+            <div class="container footer-grid">
+                <div class="footer-about">
+                    <a href="https://trantuan.io.vn" class="logo">
+                        <img src="/image/logo/logo-ngang-nen-toi.png" alt="Trần Anh Tuấn">
+                    </a>
+                    <p>Sẵn sàng đồng hành cùng doanh nghiệp tăng trưởng bằng tư duy logic và công nghệ sáng tạo.</p>
+                    <div class="socials">
+                        <a href="https://facebook.com/trantuan.io.vn/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://instagram.com/trantuan.io.vn/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://tiktok.com/@@tuan.ptvn/" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://github.com/T-AnhTuan/" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://linkedin.com/in/anh-tuan-hvtc/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="mailto:contact@trantuan.io.vn"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h5>Sơ đồ Website</h5>
+                    <ul class="danh-muc">
+                        <li><a href="https://trantuan.io.vn/">Trang chủ</a></li>
+                        <li><a href="https://trantuan.io.vn/profile/">Profile</a></li>
+                        <li><a href="https://trantuan.io.vn/cv/">Danh sách CV</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h5>Website liên kết</h5>
+                    <ul class="footer-links">
+                        <li class="footer-contact-item">
+                            <i class="fa-solid fa-building"></i>
+                            <a href="https://facebook.com/TATTechDigital" target="_blank">Fanpage TAT TechDigital</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
+                        <li class="footer-contact-item">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <a href="https://facebook.com/aof.fanpage" target="_blank">Fanpage Học viện Tài chính</a>
+                        </li>
+                        <li class="footer-contact-item">
+                            <i class="fa-sharp fa-solid fa-users"></i>
+                            <a href="https://facebook.com/hoisinhvien.com.vn" target="_blank"> Fanpage Hội Sinh viên Việt Nam</a>
+                        </li>
+                        <li class="footer-contact-item">
+                            <i class="fa-solid fa-file"></i>
+                            <a href="/cv/" target="_blank">Xem danh sách CV</a>
+                        </li>
+                        <li class="footer-contact-item">
+                            <i class="fa-solid fa-qrcode"></i>
+                            <a href="https://qrcode.trantuan.io.vn/" target="_blank">Trình tạo mã QR</a>
                         </li>
                     </ul>
                 </div>
+
+                <div class="footer-col">
+                    <h5>Liên hệ</h5>
+                    <ul class="footer-links">
+                        <li class="footer-contact-item"><i class="fa-solid fa-location-dot"></i> Vinhomes Smart City, Hà Nội</li>
+                        <li class="footer-contact-item"><i class="fa-solid fa-phone"></i> 0789.060.891</li>
+                        <li class="footer-contact-item"><i class="fa-solid fa-envelope"></i> contact@trantuan.io.vn</li>
+                    </ul>
+                </div>
             </div>
-        </nav>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
+            <div class="footer-bottom">
+                <div class="container">
+                    © 2026 Bản quyền thuộc về Trần Anh Tuấn <br> TAT TechDigital
+                </div>
+            </div>
+        </footer>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2026 - Portfolio - <a asp-area="" asp-page="/Privacy">Privacy</a>
-        </div>
-    </footer>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
 
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
+    <a href="tel:+84789060891" class="phone-ring-btn" title="Gọi ngay">
+        <div class="phone-ring-circle"></div>
+        <div class="phone-ring-circle-fill"></div>
+        <div class="phone-ring-img-circle">
+            <i class="fas fa-phone-alt"></i>
+        </div>
+    </a>
+    <a href="https://m.me/trantuan.io.vn" target="_blank" class="messenger-ring-btn" title="Nhắn tin qua Messenger">
+        <div class="messenger-ring-circle"></div>
+        <div class="messenger-ring-circle-fill"></div>
+        <div class="messenger-ring-img-circle">
+            <i class="fab fa-facebook-messenger"></i>
+        </div>
+    </a>
+
+    <button id="backToTop"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <script src="/js/site.js"></script>
+    <script src="/js/card.js"></script>
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447" integrity="sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ==" data-cf-beacon='{"version":"2024.11.0","token":"25d6597bf9aa43d0a14f47c77233ded0","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 
     @await RenderSectionAsync("Scripts", required: false)
 </body>

@@ -1,10 +1,266 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Trang chủ";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<section id="home" class="hero">
+    <div class="hero-glow"></div>
+
+    <div class="container hero-grid">
+        <div class="hero-text reveal">
+            <div class="hero-tag"><span>#1</span> Ứng viên IT Business Analyst</div>
+            <h1 class="hero-title">
+                <span>Hello, I'm</span>
+                <span class="typing-container">
+                    <span class="name-highlight"></span>
+                </span>
+            </h1>
+            <p class="hero-desc">Tôi tối ưu doanh nghiệp bằng <span class="highlight-text">Dữ liệu & Code</span>. Mở khóa tiềm năng quy trình nghiệp vụ với nền tảng Tài chính Kế toán vững chắc kết hợp cùng kỹ năng lập trình phần mềm.</p>
+
+            <div class="hero-actions">
+                <a href="#projects" class="btn-gradient">Xem Dự Án</a>
+                <a href="/cv/cv-Business-Analyst-TranAnhTuan.pdf" class="btn-outline" target="_blank"><i class="fas fa-eye" style="margin-right: 8px;"></i>Xem CV</a>
+            </div>
+        </div>
+
+        <div class="hero-img-wrapper reveal">
+            <div class="floating-card float-1">
+                <div class="float-icon">
+                    <i class="fa-solid fa-bullhorn"></i>
+                </div>
+                <div class="float-info">
+                    <h5>CTV Truyền thông</h5>
+                    <p>Trung ương Hội Sinh viên Việt Nam</p>
+                </div>
+            </div>
+            <div class="floating-card float-2">
+                <div class="float-icon"><i class="fa-solid fa-code"></i></div>
+                <div class="float-info">
+                    <h5>C# & SQL</h5>
+                    <p>Lập trình ứng dụng nội bộ</p>
+                </div>
+            </div>
+            <div class="hero-main-img">
+                <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; color: var(--text-muted);">
+                    <img src="~/image/Tran-Anh-Tuan.jpg" alt="Trần Anh Tuấn HVTC" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="tech-banner reveal">
+    <div class="container">
+        <div style="font-size: 13px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 2px;">Công cụ có thể sử dụng</div>
+        <div class="tech-logos">
+            <div class="logo-item"><i class="fa-brands fa-microsoft"></i> ASP.NET</div>
+            <div class="logo-item"><i class="fa-solid fa-database"></i> SQL Server</div>
+            <div class="logo-item"><i class="fa-brands fa-figma"></i> Figma</div>
+            <div class="logo-item"><i class="fa-solid fa-chart-pie"></i> PowerBI</div>
+            <div class="logo-item"><i class="fa-brands fa-trello"></i> Trello</div>
+            <div class="logo-item"><i class="devicon-github-original"></i> GitHub</div>
+        </div>
+    </div>
 </div>
+
+<section id="about" class="section">
+    <div class="container about-grid">
+        <div class="about-img-group reveal">
+            <div class="img-layer-1">
+                <img alt="Festival Chuyển đổi số 2023" src="~/image/MIS/Festival-Chuyen-Doi-So-2023.jpg" />
+            </div>
+            <div class="img-layer-2">
+                <img src="~/image/HSV/Gap-mat-TWHSV.jpg" alt="Gặp mặt Cán bộ Truyền thông Trung ương HSVVN" />
+            </div>
+        </div>
+
+        <div class="about-content reveal">
+            <div class="sec-subtitle">VỀ BẢN THÂN</div>
+            <h3>Người thật việc thật mang lại giá trị thật.</h3>
+            <p>Xuất phát điểm từ Học viện Tài chính, tôi am hiểu sâu sắc vòng luân chuyển chứng từ và nghiệp vụ kế toán. Đồng thời, tôi tự tay lập trình phần mềm để hiện thực hóa quy trình đó.</p>
+
+            <div class="about-list">
+                <div class="list-item">
+                    <div class="item-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+                    <div class="item-text">
+                        <h4>Phân tích Dữ liệu (Data Mining)</h4>
+                        <p>Không phỏng đoán. Tôi sử dụng số liệu thực tế để dọn dẹp, trực quan hóa và đưa ra các báo cáo hỗ trợ ra quyết định.</p>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <div class="item-icon"><i class="fa-solid fa-users"></i></div>
+                    <div class="item-text">
+                        <h4>Kỹ năng Lãnh đạo Đội nhóm</h4>
+                        <p>3 năm giữ vị trí Trưởng ban Truyền thông và tham gia tổ chức các đại sự kiện của Hội Sinh Viên.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="services" class="section" style="background: rgba(255,255,255,0.01);">
+    <div class="container">
+        <div class="sec-title-wrap reveal">
+            <div class="sec-subtitle">NĂNG LỰC CỐT LÕI</div>
+            <h2 class="sec-title">Giải quyết bài toán nghiệp vụ bằng công nghệ sáng tạo</h2>
+        </div>
+
+        <div class="services-grid reveal">
+            <div class="service-card">
+                <div class="sv-icon"><i class="fa-solid fa-sitemap"></i></div>
+                <h4>Nghiệp vụ BA</h4>
+                <p>Khảo sát, lấy yêu cầu, vẽ luồng quy trình UML, viết tài liệu chuẩn SRS, BRD.</p>
+                <a href="#" class="learn-more">Chi tiết <i class="fa-solid fa-arrow-right" style="font-size: 10px;"></i></a>
+            </div>
+            <div class="service-card">
+                <div class="sv-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                <h4>Lập trình C#</h4>
+                <p>Xây dựng phần mềm quản lý Winforms, Web ASP.NET MVC, thiết kế DB chuẩn 3NF.</p>
+                <a href="#" class="learn-more">Chi tiết <i class="fa-solid fa-arrow-right" style="font-size: 10px;"></i></a>
+            </div>
+            <div class="service-card">
+                <div class="sv-icon"><i class="fa-solid fa-file-invoice-dollar"></i></div>
+                <h4>Tài chính - Kế toán</h4>
+                <p>Hiểu nguyên lý kế toán, hạch toán tài khoản, luân chuyển chứng từ ERP.</p>
+                <a href="#" class="learn-more">Chi tiết <i class="fa-solid fa-arrow-right" style="font-size: 10px;"></i></a>
+            </div>
+            <div class="service-card">
+                <div class="sv-icon"><i class="fa-solid fa-bullhorn"></i></div>
+                <h4>Truyền thông</h4>
+                <p>Lên kế hoạch content, duy trì fanpage, xử lý hình ảnh cho các chiến dịch lớn.</p>
+                <a href="#" class="learn-more">Chi tiết <i class="fa-solid fa-arrow-right" style="font-size: 10px;"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="sec-title-wrap reveal">
+            <div class="sec-subtitle">KINH NGHIỆM ĐOÀN HỘI</div>
+            <h2 class="sec-title">Không chỉ học thuyết, tôi là người thực chiến</h2>
+        </div>
+
+        <div class="testimonial-grid reveal">
+            <div class="testi-card">
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p class="quote-text">"Quản lý đội ngũ 20+ thành viên truyền thông. Xử lý hình ảnh, lên nội dung và vận hành các sự kiện Mùa hè Xanh."</p>
+                <div class="profile">
+                    <div class="profile-img">
+                        <img src="~/image/logo/SVTN PT.png" alt="19AOF" />
+                    </div>
+                    <div class="profile-info">
+                        <h5>Đội SVTN Đồng hương Phú Thọ</h5>
+                        <p>Ban Truyền thông - Kỹ thuật</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testi-card">
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p class="quote-text">"Xin phép văn bản, chuẩn bị hậu cần cho hàng loạt sự kiện quy mô lớn: Tết Sinh Viên, Đại nhạc hội Chào tân Railway, Đại hội thể thảo Biggames tại Học viện."</p>
+                <div class="profile">
+                    <div class="profile-img">
+                        <img src="~/image/logo/Logo-HVTC.jpg" alt="BVP HSVHVTC" />
+                    </div>
+                    <div class="profile-info">
+                        <h5>Hội Sinh viên Học viện Tài chính</h5>
+                        <p>Ban Văn phòng</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testi-card">
+                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <p class="quote-text">"Sáng tạo nội dung trên mạng xã hội cấp Trung ương. Đưa các chiến dịch lan tỏa tới hàng chục nghìn sinh viên toàn quốc."</p>
+                <div class="profile">
+                    <div class="profile-img">
+                        <img src="~/image/logo/Hội Sinh viên.png" alt="HSVVN" />
+                    </div>
+                    <div class="profile-info">
+                        <h5>Trung ương Hội Sinh viên Việt Nam</h5>
+                        <p>CTV Truyền Thông</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="section">
+    <div class="container">
+        <div class="sec-title-wrap reveal">
+            <div class="sec-subtitle">SẢN PHẨM THỰC TẾ</div>
+            <h2 class="sec-title">Chuyển hóa yêu cầu thành Phần mềm</h2>
+        </div>
+
+        <div class="projects-grid reveal">
+            <div class="project-card">
+                <div class="proj-img-box">
+                    <img src="/image/project/duan1.jpg" alt="Hệ thống Quản lý Bán hàng ASP.NET MVC" />
+                    <div class="proj-overlay">
+                        <a href="#" class="btn-round-link"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="proj-info">
+                    <h4>Hệ thống Quản lý Bán hàng</h4>
+                    <p>Phân tích Entity Framework, quản lý nhập xuất kho, viết Use Case cho ASP.NET MVC.</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="proj-img-box">
+                    <img src="/image/project/ERP-Do-go-Dai-Trang.png" alt="Ứng dụng Desktop Kế toán nội bộ" />
+                    <div class="proj-overlay">
+                        <a href="#" class="btn-round-link"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="proj-info">
+                    <h4>Phần mềm Kế toán Nội bộ</h4>
+                    <p>Ứng dụng C# Winforms quản lý thu chi, kiểm tra tính hợp lệ của chứng từ đầu vào.</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="proj-img-box">
+                    <img src="/images/project/web-profile.png" alt="Giao diện Website" />
+                    <div class="proj-overlay">
+                        <a href="/profile/" target="_blank" class="btn-round-link"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="proj-info">
+                    <h4>Website Portfolio</h4>
+                    <p>Ứng dụng HTML/CSS/JavaScript để tạo nên trang web thương hiệu cá nhân, tối ưu hóa trải nghiệm người dùng.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cta-section" id="contact">
+    <div class="container cta-content reveal" id="stats-trigger">
+        <h2>Hãy để tôi làm cầu nối giữa<br>Nghiệp vụ và Công nghệ của bạn</h2>
+        <p>Sẵn sàng nhận việc Thực tập sinh / Chuyên viên Phân tích Nghiệp vụ (BA) ngay hôm nay.</p>
+
+        <div class="stats-wrap">
+            <div class="stat-block">
+                <div class="stat-num"><span class="counter" data-target="3">0</span><span>+</span></div>
+                <div class="stat-lbl">Dự án</div>
+            </div>
+            <div class="stat-block">
+                <div class="stat-num"><span class="counter" data-target="85">0</span><span>%</span></div>
+                <div class="stat-lbl">Phản hồi tích cực</div>
+            </div>
+            <div class="stat-block">
+                <div class="stat-num"><span class="counter" data-target="4">0</span><span>+</span></div>
+                <div class="stat-lbl">Năm KN Đoàn Hội</div>
+            </div>
+        </div>
+
+        <a href="mailto:contact@trantuan.io.vn" class="btn-gradient">
+            <i class="fa-solid fa-paper-plane"></i> Gửi Mail ngay
+        </a>
+    </div>
+</section>
