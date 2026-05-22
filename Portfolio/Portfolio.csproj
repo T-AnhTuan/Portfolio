@@ -15,7 +15,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\image\project\" />
     <Folder Include="wwwroot\video\" />
   </ItemGroup>
 
