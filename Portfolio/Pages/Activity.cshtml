@@ -1,0 +1,232 @@
+﻿@page "/activity"
+@model Portfolio.Pages.ActivityModel
+@{
+    ViewData["Title"] = "Hoạt động";
+}
+
+<style>
+    /* Hiển thị ngay tất cả reveal elements khi page load */
+    .reveal {
+        opacity: 1 !important;
+        transform: translateY(0) !important;
+    }
+</style>
+
+<section id="activity" class="hero-section">
+    <div class="hero-glow"></div>
+    <div class="container">
+        <div class="sec-title-wrap reveal">
+            <div class="sec-subtitle">HOẠT ĐỘNG NỔI BẬT</div>
+            <h1 class="sec-title">Hành trình phát triển qua các hoạt động</h1>
+            <p class="sec-description">Tôi không chỉ học tập mà còn tích cực tham gia các hoạt động tại Học viện Tài chính và cộng đồng, từ truyền thông, lãnh đạo đội nhóm đến tổ chức sự kiện lớn.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Communication & Media Section -->
+<section class="section">
+    <div class="container">
+        <div class="activity-header reveal">
+            <div class="header-icon"><i class="fa-solid fa-bullhorn"></i></div>
+            <div class="header-content">
+                <h2 class="activity-title">Truyền thông & Truyền Thông Đa Phương Tiện</h2>
+                <p class="activity-subtitle">Lên kế hoạch nội dung, quản lý cộng đồng, thiết kế hình ảnh, sản xuất video</p>
+            </div>
+        </div>
+
+        <div class="activities-grid reveal">
+            <!-- Activity Card 1 -->
+            <div class="activity-card">
+                <div class="card-image">
+                    <img src="/image/HSV/Ngay-hoi-SV5T-TP-Ha-Noi-2025.jpg" alt="Ngày hội Sinh viên 5T" />
+                    <div class="card-overlay">
+                        <span class="activity-year">2025</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3>Ngày hội Sinh viên 5T - Hà Nội</h3>
+                    <p class="activity-role">Cộng tác viên Truyền thông</p>
+                    <p class="activity-desc">Tham gia lên kế hoạch, thiết kế hình ảnh, xử lý và đăng tải nội dung cho sự kiện sinh viên quy mô toàn quốc tại Hà Nội với hơn 200+ sinh viên tham gia.</p>
+                    <div class="activity-tags">
+                        <span class="tag">Content Planning</span>
+                        <span class="tag">Graphic Design</span>
+                        <span class="tag">Event Coordination</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Activity Card 2 -->
+            <div class="activity-card">
+                <div class="card-image">
+                    <img src="/image/HSV/Trao-GCN-TWHSV.jpg" alt="Lễ trao giấy chứng nhận TWHSV" />
+                    <div class="card-overlay">
+                        <span class="activity-year">2024</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3>Lễ trao giấy chứng nhận - Trung ương Hội Sinh viên</h3>
+                    <p class="activity-role">Cộng tác viên Truyền thông</p>
+                    <p class="activity-desc">Đảm nhận công việc ghi hình, chỉnh sửa video, thiết kế ảnh bìa và lên lịch đăng tải nội dung trên các nền tảng mạng xã hội cho buổi trao chứng nhận.</p>
+                    <div class="activity-tags">
+                        <span class="tag">Video Editing</span>
+                        <span class="tag">Photography</span>
+                        <span class="tag">Social Media</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Activity Card 3 -->
+            <div class="activity-card">
+                <div class="card-image">
+                    <img src="/image/HSV/Gap-mat-TWHSV.jpg" alt="Gặp mặt Trung ương Hội Sinh viên" />
+                    <div class="card-overlay">
+                        <span class="activity-year">2024</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3>Gặp mặt Trung ương Hội Sinh viên</h3>
+                    <p class="activity-role">Cộng tác viên Truyền thông</p>
+                    <p class="activity-desc">Tổ chức, quay hình, chỉnh sửa và phát hành nội dung hậu sự cho cuộc gặp mặt đội ngũ lãnh đạo Trung ương Hội Sinh viên Việt Nam.</p>
+                    <div class="activity-tags">
+                        <span class="tag">Event Management</span>
+                        <span class="tag">Content Creation</span>
+                        <span class="tag">Leadership</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Academic & Professional Section -->
+<section class="section" style="background: rgba(255,255,255,0.01);">
+    <div class="container">
+        <div class="activity-header reveal">
+            <div class="header-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="header-content">
+                <h2 class="activity-title">Hoạt động học tập & Chuyên môn</h2>
+                <p class="activity-subtitle">Tham gia các dự án, cuộc thi, và chương trình phát triển kỹ năng</p>
+            </div>
+        </div>
+
+        <div class="timeline reveal">
+            <!-- Timeline Item 1 -->
+            <div class="timeline-item">
+                <div class="timeline-marker">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-line"></div>
+                </div>
+                <div class="timeline-content">
+                    <h3 class="timeline-title">Tham gia Festival Chuyển đổi số 2023</h3>
+                    <p class="timeline-date"><i class="fa-solid fa-calendar"></i> 2023</p>
+                    <p class="timeline-desc">Biểu diễn các ứng dụng phần mềm được phát triển từ dự án môn học, trình bày giải pháp quản lý cho khán giả tại lễ hội chuyển đổi số lớn nhất năm.</p>
+                    <div class="timeline-skills">
+                        <span>C# Winforms</span>
+                        <span>SQL Server</span>
+                        <span>System Design</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Timeline Item 2 -->
+            <div class="timeline-item">
+                <div class="timeline-marker">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-line"></div>
+                </div>
+                <div class="timeline-content">
+                    <h3 class="timeline-title">Tham gia dự án tạo mã QR code</h3>
+                    <p class="timeline-date"><i class="fa-solid fa-calendar"></i> 2023</p>
+                    <p class="timeline-desc">Phát triển ứng dụng hỗ trợ tạo và quản lý mã QR code với giao diện thân thiện, kết hợp tư duy UX/UI và kỹ năng lập trình backend.</p>
+                    <div class="timeline-skills">
+                        <span>C# Programming</span>
+                        <span>UI/UX Design</span>
+                        <span>Database</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Timeline Item 3 -->
+            <div class="timeline-item">
+                <div class="timeline-marker">
+                    <div class="timeline-dot"></div>
+                </div>
+                <div class="timeline-content">
+                    <h3 class="timeline-title">Tham gia chương trình MIS chuyên biệt</h3>
+                    <p class="timeline-date"><i class="fa-solid fa-calendar"></i> 2022-2024</p>
+                    <p class="timeline-desc">Học tập nâng cao về hệ thống thông tin quản lý, phân tích yêu cầu, thiết kế cơ sở dữ liệu, quản lý dự án và các công cụ Business Analysis chuyên nghiệp.</p>
+                    <div class="timeline-skills">
+                        <span>BPMN 2.0</span>
+                        <span>UML</span>
+                        <span>Business Analysis</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Personal Skills Section -->
+<section class="section">
+    <div class="container">
+        <div class="activity-header reveal">
+            <div class="header-icon"><i class="fa-solid fa-star"></i></div>
+            <div class="header-content">
+                <h2 class="activity-title">Kỹ năng & Kinh nghiệm Thực tế</h2>
+                <p class="activity-subtitle">Những điều tôi học được qua các hoạt động và dự án</p>
+            </div>
+        </div>
+
+        <div class="skills-showcase reveal">
+            <div class="skill-item">
+                <div class="skill-icon"><i class="fa-solid fa-users"></i></div>
+                <h4>Lãnh đạo & Quản lý Nhóm</h4>
+                <p>Lãnh đạo đội ngũ 20+ thành viên, phân công công việc, đánh giá tiến độ và giải quyết xung đột nhóm hiệu quả.</p>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-icon"><i class="fa-solid fa-palette"></i></div>
+                <h4>Thiết kế Nội dung & Hình ảnh</h4>
+                <p>Lên kế hoạch nội dung, xử lý hình ảnh với Photoshop, thiết kế poster, cover, ảnh bìa phù hợp với chiến dịch.</p>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-icon"><i class="fa-solid fa-video"></i></div>
+                <h4>Sản xuất & Chỉnh sửa Video</h4>
+                <p>Quay hình, chỉnh sửa video, thêm hiệu ứng âm thanh, tối ưu hóa cho các nền tảng mạng xã hội khác nhau.</p>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-icon"><i class="fa-solid fa-chart-line"></i></div>
+                <h4>Phân tích & Báo cáo</h4>
+                <p>Thu thập dữ liệu, phân tích hiệu quả chiến dịch, tạo báo cáo chi tiết cho lãnh đạo và các bên liên quan.</p>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-icon"><i class="fa-solid fa-comments"></i></div>
+                <h4>Quản lý Cộng đồng</h4>
+                <p>Tương tác với followers, phản hồi kịp thời, xây dựng cộng đồng trực tuyến tích cực và cầu nối với khán giả.</p>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
+                <h4>Tương tác Nhân loại</h4>
+                <p>Có khả năng giao tiếp tốt, lắng nghe ý kiến, hợp tác với các bộ phận khác nhau đạt được mục tiêu chung.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="section" style="background: rgba(139, 92, 246, 0.05); border-top: 1px solid var(--card-border);">
+    <div class="container">
+        <div class="cta-content reveal">
+            <h2>Hãy cùng nhau tạo nên điều gì đó tuyệt vời</h2>
+            <p>Tôi sẵn sàng đồng hành cùng các dự án cần người có tư duy logic, kỹ năng lãnh đạo và tâm huyết cao.</p>
+            <div class="cta-actions">
+                <a href="mailto:contact@trantuan.io.vn" class="btn-gradient"><i class="fa-solid fa-paper-plane"></i> Gửi Mail</a>
+                <a href="#" class="btn-outline"><i class="fa-solid fa-calendar"></i> Lên lịch gặp</a>
+            </div>
+        </div>
+    </div>
+</section>
